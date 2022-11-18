@@ -11,12 +11,16 @@ public class Ejercicio27_T2 {
         System.out.println("Escriba el tiempo de  Time Out(milisegundos): ");
         int TO=new Scanner(System.in).nextInt();
         long mls=TO;
+        InetAddress ia = null;
         try{
-             InetAddress.getByName(IP); 
-             InetAddress ip1=getByName(IP);
-             Thread.sleep(mls);
-             System.out.println("Se puede hacer Ping? "+ip1.isReachable(TO));
-        }catch (Exception e){
+            ia = ia.getByName(IP);
+            try{
+                boolean resp = ia.isReachable(TO);
+                System.out.println("Haciendo ping a "+IP+"..."+resp);
+                } catch (Exception e){
+                    System.out.println("Error");
+                }
+            }catch (Exception e){
             System.out.println("Error"+ e.getMessage());
         }
     }
