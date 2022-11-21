@@ -27,6 +27,8 @@ public class Ejercicio01_T3 {
             case "5":   
                 System.out.println("Reproduciendo: Intro Doraemon (Versión Española).mp3...");
                 break;
+             default:
+                System.out.println("El numero escogido no esta en la lista");
          }
     }
     
