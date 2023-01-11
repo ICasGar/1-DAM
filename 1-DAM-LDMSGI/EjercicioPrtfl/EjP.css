@@ -1,8 +1,12 @@
 body{
     background-color: rgb(163, 221, 221);
-    display: grid;
-    place-content: center;
     font-family: Calibri;
+}
+main{
+    display: block;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 a{
     color: rgb(15, 20, 48);
@@ -97,4 +101,13 @@ p{
 ul{
     display: grid;
     place-content: center;
+}
+footer{
+    font-size: 0.8em;
+    float: left;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
