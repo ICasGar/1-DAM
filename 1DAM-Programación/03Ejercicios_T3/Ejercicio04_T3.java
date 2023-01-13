@@ -6,9 +6,10 @@ public class Ejercicio04_T3 {
         boolean programa=true;
         String si="si";
         String no="no";
+        String respuesta;
         while(programa){
             System.out.println("Eres mayor de edad (si/no)?");   
-            String respuesta=new Scanner (System.in).nextLine();
+            respuesta=new Scanner (System.in).nextLine();
             if(respuesta.equals(si)){
                 System.out.println("Eres mayor de edad");
                 programa=false;
