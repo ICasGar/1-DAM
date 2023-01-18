@@ -1,7 +1,9 @@
 div{
-    width: 120px;
-    height: 120px;
-    background-image: url(logo.png);
+    border: 10px;
+    padding: 40px;
+    border-style: dotted;
+    background: url("logo.png");
+    background-position: center left;
     background-origin: padding-box;
-    background-size: 120px;
+    background-repeat: no-repeat;
 }
