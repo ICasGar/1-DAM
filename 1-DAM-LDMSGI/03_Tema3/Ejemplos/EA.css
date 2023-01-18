@@ -1,0 +1,7 @@
+div{
+    width: 120px;
+    height: 120px;
+    background-image: url(logo.png);
+    background-origin: padding-box;
+    background-size: 120px;
+}
