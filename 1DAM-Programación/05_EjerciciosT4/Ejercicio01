@@ -1,0 +1,30 @@
+package ejercicio_dni;
+import java.awt.Point;
+public class DNI {
+    private int numero;
+    private char letra;
+    String completo;
+    
+    public DNI(int n, char l){
+        numero = n;
+        letra = l;
+    };
+    
+    public DNI (String dni){
+        completo = dni;
+        letra = dni.charAt(dni.length()-1);
+        String num2 = dni.substring(0,7);
+        
+        numero = Integer.parseInt(num2);
+    };
+    
+    public int getNumDNI(){
+        return numero;
+    };
+    public char getLetraDNI(){
+        return letra;  
+    };
+    public String getDNI(){
+        return completo;
+    }
+}
