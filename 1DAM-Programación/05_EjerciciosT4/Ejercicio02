@@ -1,0 +1,30 @@
+package ejercicio2_tema4;
+import java.awt.Point;
+public class Caja {
+    private boolean abierto;
+    private String mensaje;
+    
+    public Caja(String m){
+        mensaje = m;
+        abierto = false;
+    }
+    
+    public Caja(boolean a, String m){
+        abierto = a;
+        mensaje = m;
+    }
+    
+    public Caja(){
+        abierto = false;
+        mensaje = "Viva el tema 7";
+    }
+
+    //GETTERS
+    public boolean CajaAbierta(){
+        return abierto;
+    }
+    
+    public String MensajeCaja(){
+        return mensaje;
+    }
+}
