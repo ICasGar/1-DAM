@@ -26,5 +26,18 @@ public class Caja {
     
     public String MensajeCaja(){
         return mensaje;
+        
     }
+    
+    @Override
+    public String toString(){
+        
+        String aux;
+        if(abierto)
+            aux = "La caja esta abierta";
+        else 
+            aux = "La caja esta cerrada";
+        aux += "y contiene el mensaje "+mensaje;
+        
+        return aux;
 }
