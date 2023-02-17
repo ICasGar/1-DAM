@@ -22,8 +22,14 @@ public class CuentaCorriente {
         saldo += cantidad;
     }
     
-    public void retirarDinero(int cantidad){
-        saldo -= cantidad;
+    public void retirarDinero(int cantidad) throws Exception{
+        if (cantidad>0){
+            saldo -= (double)cantidad;
+        }else{
+        Exception e=new Exception("No se puede retirar "
+                    + "numeros negativos");
+        throw e;
+        }
     }
     
     //Getters
