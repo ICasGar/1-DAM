@@ -1,0 +1,34 @@
+package ejercicio22_tema4;
+public class Fraccion {
+    private int numerador;
+    private int denominador;
+    private double valorReal;
+    private Fraccion v;
+    
+    //SETTERS
+    public Fraccion(){
+    }    
+    
+    public Fraccion(int n, int f){
+        numerador = n;
+        denominador = f;
+    }
+    //GETTERS
+    
+    public int getNumerador(){
+        return numerador;
+    }
+    
+    public int getDenominador(){
+        return denominador;
+    }
+    
+    public double getValorReal(){
+        valorReal = numerador/denominador;
+        return valorReal;
+    }
+    
+    public Fraccion getInversa(){
+
+    }
+}
