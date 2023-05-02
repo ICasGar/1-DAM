@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: white;
+  font-family: sans-serif;
+  background-image:linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url(fondo1.png);
+  
+}
+.Header{
+  color: black;
+  background-color: #EDCB54;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  padding: 1.3%;
+}
+.Header .menu{
+  margin-left: -10%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.Header .menu a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 13%;
+}
+.Mid{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+  margin: 15%;
+  text-align: center;
+}
+.Mid .Seguir button{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 5%;
+  color: white;
+  transition: 0.5s;
+}.Mid .Seguir button:hover{
+  background-color: white;
+  color: black;
+}
+.Mid .txt1 .btn1{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 5%;
+  color: white;
+  transition: 0.5s;
+}
+.Mid .txt1 .btn1:hover{
+  background-color: white;
+  color: black;
+}
+footer{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 50px 0 30px 0;
+}
+footer .redes {
+  margin-bottom: 20px;
+}
+footer .redes .rIcons{
+  display: inline-block;
+  font-size: 20px;
+
+}
